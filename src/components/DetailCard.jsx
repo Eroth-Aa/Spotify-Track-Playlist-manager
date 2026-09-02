@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 export default function DetailCard({ selectedTrack }) {
   const [activeDetails, setActiveDetails] = useState(null);
-
-  // Sync state whenever selected track changes via useEffect
   useEffect(() => {
     setActiveDetails(selectedTrack);
   }, [selectedTrack]);

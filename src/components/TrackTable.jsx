@@ -65,7 +65,7 @@ export default function TrackTable({ tracks, onSelectTrack, selectedTrackId }) {
         </table>
       </div>
 
-      {/* Pagination Controls */}
+
       <div className="flex items-center justify-between pt-2">
         <span className="text-xs text-slate-400">
           Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount() || 1}
