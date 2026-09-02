@@ -1,3 +1,4 @@
+import { useState, useMemo } from 'react';
 import {
   useReactTable,
   getCoreRowModel,
@@ -20,7 +21,7 @@ export default function TrackTable({ tracks, onSelectTrack, selectedTrackId }) {
     columns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
-    initialState: { pagination: { pageSize: 3 } } // Meets requirement: 3-5 rows
+    initialState: { pagination: { pageSize: 3 } }
   });
 
   return (
